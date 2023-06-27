@@ -6,8 +6,10 @@ function N.setup()
     local opt = { noremap = false, silent = true, nowait = true }
 
     -- Default
-    v.keymap.set('n', '<c-a>', 'ggVG', opt)                -- Select All text in file
+    v.keymap.set('n', '<c-a>', 'ggVG', opt)               -- Select All text in file
     v.keymap.set('', '<esc>', '<cmd>nohlsearch<cr>', opt) -- Cancel highlighting selected text
+
+    v.keymap.set('n', '<space>w', '<C-w>w', opt)          -- Switch window focus
 
     -- Diagnostic
     v.keymap.set('n', '<space>e', v.diagnostic.open_float, opt) -- Open description for diagnostic in window
