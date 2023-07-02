@@ -23,14 +23,14 @@ null_ls.setup({
         b.formatting.fixjson,
 
         b.diagnostics.tsc,
-        -- b.diagnostics.cspell.with { config = cspell_config },
+        --b.diagnostics.cspell.with { config = cspell_config },
 
         b.hover.dictionary,
 
         b.code_actions.eslint_d,
-        b.code_actions.gitsigns,
-        b.code_actions.gitrebase,
-        -- b.code_actions.cspell.with { config = cspell_config },
+        -- b.code_actions.gitsigns,
+        -- b.code_actions.gitrebase,
+        b.code_actions.cspell.with { config = cspell_config },
     },
     save_after_format = true
 })

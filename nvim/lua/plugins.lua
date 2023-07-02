@@ -35,6 +35,8 @@ function N.setup()
         use 'jose-elias-alvarez/null-ls.nvim'
         use 'lewis6991/gitsigns.nvim'
         use { 'j-hui/fidget.nvim', tag = 'legacy', config = require("config.fidget").setup }
+        use { 'kosayoda/nvim-lightbulb', requires = 'antoinemadec/FixCursorHold.nvim' }
+        use { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }
     end)
 end
 

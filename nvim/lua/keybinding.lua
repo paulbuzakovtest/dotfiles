@@ -9,7 +9,7 @@ function N.setup()
     v.keymap.set('n', '<c-a>', 'ggVG', opt)               -- Select All text in file
     v.keymap.set('', '<esc>', '<cmd>nohlsearch<cr>', opt) -- Cancel highlighting selected text
 
-    v.keymap.set('n', '<space>w', '<C-w>w', opt)          -- Switch window focus
+    v.keymap.set('n', 'w', '<C-w>w', opt)          -- Switch window focus
 
     -- Diagnostic
     v.keymap.set('n', '<space>e', v.diagnostic.open_float, opt) -- Open description for diagnostic in window
@@ -32,7 +32,7 @@ function N.setup()
             --v.keymap.set('n', '<space>wl', function() print(v.inspect(v.lsp.buf.list_workspace_folders())) end, opts)
             v.keymap.set('n', '<space>D', v.lsp.buf.type_definition, opts)
             v.keymap.set('n', '<space>rn', v.lsp.buf.rename, opts)
-            v.keymap.set({ 'n', 'v' }, '<space>ca', v.lsp.buf.code_action, opts)
+            v.keymap.set({ 'n', 'v' }, 'ca', '<cmd>CodeActionMenu<cr>', opts) -- v.lsp.buf.code_action
             v.keymap.set('n', 'gr', v.lsp.buf.references, opts)
             v.keymap.set('n', '<space>f', function() v.lsp.buf.format { async = true } end, opts)
         end,

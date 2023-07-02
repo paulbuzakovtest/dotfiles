@@ -9,7 +9,7 @@ function M.setup()
     v.g.solarized_italic_variables = false
     v.g.solarized_contrast = true
     v.g.solarized_borders = false
-    v.g.solarized_disable_background = false
+    v.g.solarized_disable_background = true
 
     require('solarized').set()
 end
