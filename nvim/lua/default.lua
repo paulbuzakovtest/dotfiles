@@ -20,8 +20,9 @@ function N.setup()
 	v.opt.inccommand = 'split'
 	v.opt.ignorecase = true
 	v.opt.smarttab = true
+    v.opt.softtabstop = 4
 	v.opt.breakindent = true
-	v.opt.shiftwidth = 4
+    v.opt.shiftwidth = 4
 	v.opt.tabstop = 4
 	v.opt.wrap = false
 	v.opt.backspace = { 'start', 'eol', 'indent' }
