@@ -10,7 +10,7 @@ function N.setup()
 
     return packer.startup(function(use)
         use 'wbthomason/packer.nvim'
-        use 'rhysd/vim-fixjson'
+
         use 'tjdevries/colorbuddy.nvim'
         use { 'paulbuzakov/solarized.nvim', config = require('config.colorscheme').setup }
         use 'nvim-lua/plenary.nvim'
@@ -33,6 +33,8 @@ function N.setup()
         use 'nvim-lualine/lualine.nvim'
         use 'jose-elias-alvarez/null-ls.nvim'
         use 'lewis6991/gitsigns.nvim'
+        -- use { 'j-hui/fidget.nvim', tag = 'legacy', config = require("fidget").setup }
+        -- use { 'kosayoda/nvim-lightbulb', requires = 'antoinemadec/FixCursorHold.nvim' }
         use { 'weilbith/nvim-code-action-menu', cmd = 'CodeActionMenu' }
     end)
 end
